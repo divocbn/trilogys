@@ -49,7 +49,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
         )}
       >
         {props.children}
-        
+
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="absolute bottom-4 right-4">
             <ThemeToggle />
@@ -60,3 +60,4 @@ export default function RootLayout(props: { children: React.ReactNode }) {
     </html>
   );
 }
+ 

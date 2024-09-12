@@ -1,8 +1,6 @@
 import { prisma } from "@portfolio/db";
 
-export default async function HomePage() {
-  const users = await prisma.user.findMany();
-
+export default function HomePage() {
   return (
     <main className="container h-screen py-16">
       <div className="flex flex-col items-center justify-center gap-4">
@@ -11,10 +9,6 @@ export default async function HomePage() {
         </h1>
 
         <h2 className="text-2xl font-semibold tracking-tight">By @divocbn</h2>
-
-        {users.map(user =>
-          <p key={user.id}>{user.name}</p>
-        )}
       </div>
     </main>
   );
