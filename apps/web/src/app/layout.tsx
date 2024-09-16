@@ -12,6 +12,8 @@ import "~/app/globals.css";
 
 import { env } from "~/env";
 import Balancer from "react-wrap-balancer";
+import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -64,23 +66,38 @@ export default function RootLayout(props: { children: React.ReactNode }) {
 
         <div className="h-11 bg-[#161617]/[70%] backdrop-blur-lg backdrop-saturate-150 fixed top-16 w-full flex items-center justify-center z-50">
           <div className="container w-full flex flex-row gap-10 tracking-[-0.01em] text-white/[85%] text-xs">
-            <p className="max-w-md">Informationen</p>
-            <p className="max-w-md">Dienstleistungen</p>
-            <p className="max-w-md">Referenzen</p>
-            <p className="max-w-md">Team</p>
-            <p className="max-w-md">Kontakt</p>
-            <p className="max-w-md">Impressum</p>
+            <Link
+              className="max-w-md hover:scale-95 transition-transform"
+              href="/">
+              Informationen
+            </Link>
+            <Link
+              className="max-w-md hover:scale-95 transition-transform"
+              href="/services">
+              Dienstleistungen
+            </Link>
+            <Link
+              className="max-w-md hover:scale-95 transition-transform"
+              href="/work">
+              Referenzen
+            </Link>
+            <p className="max-w-md hover:scale-95 transition-transform">Team</p>
+            <p className="max-w-md hover:scale-95 transition-transform">Kontakt</p>
+            <p className="max-w-md hover:scale-95 transition-transform">Impressum</p>
           </div>
         </div>
 
         {props.children}
 
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          <div className="absolute bottom-4 right-4">
-            <ThemeToggle />
+        <div className="bg-[#161617]/5 w-full h-40">
+          <div className="container flex items-end h-full py-8 ">
+            <div className="flex flex-row justify-between  w-full text-end items-end gap-5">
+              <p className="tracking-tight text-black/50 text-xs">Copyright © 2024 Trilogys.de - All rights reserved.</p>
+              <p className="max-w-sm tracking-tight text-black/70">Webentwicklung, Softwareentwicklung, Projektplanung, UI / UX, Cyber Security, Hosting</p>
+            </div>
           </div>
-          <Toaster />
-        </ThemeProvider>
+        </div>
+
       </body>
     </html>
   );
