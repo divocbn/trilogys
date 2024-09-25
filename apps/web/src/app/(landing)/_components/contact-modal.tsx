@@ -1,4 +1,6 @@
-import * as React from "react"
+"use client"
+
+import { useState } from "react";
 
 import { Button } from "@portfolio/ui/button"
 import {
@@ -12,10 +14,12 @@ import {
 } from "@portfolio/ui/dialog"
 import Balancer from "react-wrap-balancer"
 import { Input } from "@portfolio/ui/input"
-import { PersonIcon, EnvelopeClosedIcon, MobileIcon } from "@radix-ui/react-icons";
+import { PersonIcon, EnvelopeClosedIcon, MobileIcon, BackpackIcon, ReaderIcon } from "@radix-ui/react-icons";
 
 
 export function ContactUsModal({ children }: React.PropsWithChildren) {
+  const [loading, setLoading] = useState(false);
+
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -40,14 +44,19 @@ export function ContactUsModal({ children }: React.PropsWithChildren) {
           </div>
 
           <div className="flex gap-4">
-            <Input placeholder="Unternehmen..." startIcon={PersonIcon} />
-            <Input placeholder="Text..." startIcon={PersonIcon} />
+            <Input placeholder="Unternehmen..." startIcon={BackpackIcon} />
+            <Input placeholder="Notiz..." startIcon={ReaderIcon} />
           </div>
 
           <p className="text-black/50 text-sm tracking-tight max-w-sm mt-2">Du willst direkt loslegen? Vereinbare jetzt einen Web-Call und bringe den Ball ins Rollen.          </p>
         </div>
         <DialogFooter>
-          <Button type="submit">Kontaktieren</Button>
+          <Button
+            type="submit"
+            loading={loading}
+            onClick={() => setLoading(!loading)}>
+              Kontaktieren
+          </Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

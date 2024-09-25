@@ -7,27 +7,27 @@ import { ContactUsModal } from "./_components/contact-modal";
 
 export default function HomePage() {
   return (
-    <main className="container min-h-screen pt-40">
-      <div className="flex flex-col items-center justify-center gap-4 py-12">
-        <h1 className="text-5xl font-bold tracking-tighter sm:text-[5rem]">
+    <main className="container min-h-screen">
+      <div className="flex flex-col items-center justify-center gap-4 sm:py-28 py-12">
+        <h1 className="vt-name-[headline] text-5xl font-bold tracking-tighter sm:text-[5rem]">
           Lassen Sie uns einfach Taten sprechen.
         </h1>
       </div>
 
-      <div className="flex flex-col mt-16 w-full gap-3">
+      <div className="flex flex-col mt-3 w-full gap-3">
         <div className="w-full rounded-lg relative border-[1.5px] border-black/10">
           <Image
             src="/raplarue.png"
             width={2048}
             height={0}
             alt="Rap La Rue Project Image"
-            className="rounded-lg invert "
+            className="rounded-lg invert vt-name-[hero-image]"
           />
         </div>
         <p className="text-xs text-black/50">Administrationsoberfläche des Projekts Rap La Rue mithilfe von Next.js, Tailwind, Prisma</p>
       </div>
 
-      <div className="py-32 flex flex-col gap-5 items-center justify-center">
+      <div className="sm:py-32 py-24 flex flex-col gap-5 items-center justify-center">
         <div className="flex flex-col gap-3 items-center">
           <p className="text-4xl font-semibold tracking-tight max-w-3xl text-center">Wir setzen Wert darauf, ihr Produkt nach Ihren Wünschen zu realisieren.</p>
           <p className="text-2xl font-medium tracking-tight max-w-lg text-black/50 text-center">
