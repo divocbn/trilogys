@@ -29,7 +29,7 @@ export default function ServicesPage() {
     { component: PiFigmaLogo, label: "UI / UX" },
     { component: VscServerProcess, label: "Hosting" },
   ];
-  
+
   return (
     <main className="min-h-screen">
       <div className="flex flex-col items-start justify-center gap-4 ">
@@ -42,7 +42,7 @@ export default function ServicesPage() {
                   key={index}
                   className="flex flex-col gap-2 items-center"
                   animate={{
-                    scale: activeIndex === index ? 1.15 : 1, 
+                    scale: activeIndex === index ? 1.15 : 1,
                     color: activeIndex === index ? "#2563eb" : "#000",
                   }}
                   transition={{ duration: 0.5 }}
@@ -59,7 +59,7 @@ export default function ServicesPage() {
           <div className="text-5xl flex lg:flex-row flex-col lg:text-start text-center items-center justify-between font-semibold tracking-tighter sm:text-[3.5rem] xl:text-[5rem] sm:py-20 py-8">
             <h1 className='vt-name-[headline]'>Dienstleistungen</h1>
             <p className="lg:text-2xl sm:text-3xl text-2xl tracking-tight font-medium text-black/50 lg:max-w-lg  max-w-2xl mt-2">
-              Über <span className="text-3xl font-extrabold">42+</span> moderne <span className="text-blue-400">Programmiersprachen</span>, <span className="text-blue-400">Frameworks</span> & <span className="text-blue-400">Tools</span> mit welchen wir uns perfekt auskennen.
+              Über <span className="text-3xl font-extrabold">42+</span> moderne <span className="text-[#2563eb]">Programmiersprachen</span>, <span className="text-[#2563eb]">Frameworks</span> & <span className="text-[#2563eb]">Tools</span> mit welchen wir uns perfekt auskennen.
             </p>
           </div>
 

@@ -3,18 +3,21 @@
 import { useEffect, useState } from 'react';
 
 import { VscVscodeInsiders, VscServerProcess, VscTerminalCmd, VscProject, VscShield } from 'react-icons/vsc'
-import { PiFigmaLogo } from 'react-icons/pi'
+import { PiAmazonLogoDuotone, PiAmazonLogoFill, PiFigmaLogo, PiFramerLogoFill, PiUploadFill, PiUploadThin } from 'react-icons/pi'
 
 import Image from 'next/image';
 
 import { motion } from "framer-motion";
 import Balancer from 'react-wrap-balancer';
-import { TbBrandNextjs, TbBrandTypescript, TbBrandVercel, TbBrandVisualStudio } from 'react-icons/tb';
-import { RiNextjsLine, RiTailwindCssLine } from 'react-icons/ri';
+import { TbBrandAmazon, TbBrandCloudflare, TbBrandNextjs, TbBrandPrisma, TbBrandTypescript, TbBrandVercel, TbBrandVisualStudio, TbMusicX } from 'react-icons/tb';
+import { RiAmazonFill, RiDrizzleFill, RiNextjsFill, RiNextjsLine, RiTailwindCssFill, RiTailwindCssLine } from 'react-icons/ri';
 import { Canvas, MeshProps } from '@react-three/fiber';
 import { Html, OrbitControls } from '@react-three/drei';
 import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
+import { Button } from '@portfolio/ui/button';
+import RapLaRueWorkPage from './_components/raplarue-work';
+import KfcWorkPage from './_components/kfc-work';
 
 export default function WorkPage() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -64,7 +67,7 @@ export default function WorkPage() {
                   </linearGradient>
                 </svg>
 
-                <icon.component size={256} stroke='url(#icon-gradient)' fill='url(#icon-gradient)' />
+                <icon.component size={256} stroke="url(#icon-gradient)" fill="url(#icon-gradient)" />
               </motion.div>
             );
           })}
@@ -77,46 +80,12 @@ export default function WorkPage() {
         </h1>
       </div>
 
-      <div className="min-h-screen container py-32 gap-5 flex sm:flex-row flex-col">
-        <div className="flex flex-col gap-10 xl:max-w-lg lg:max-w-md md:max-w-sm">
-          <div className="flex flex-col gap-5">
-            <p className="text-6xl font-bold tracking-tight">Rap La Rue</p>
-            <p className="text-xl font-semibold text-black/50 tracking-tight">
-              Trilogys Studios ist verantwortlich für das UI / UX & die gesamte Bewerbungsplattform für Rap La Rue.
-            </p>
-          </div>
+      <RapLaRueWorkPage />
+    
+      { /** okay this is kinda rigged, better use a seperator component here, TODO: */}
+      <div className="sm:mx-32 md:mx-16 mx-8 sm:bg-black/10 h-0.5 sm:mb-20" />
 
-          <div className="flex flex-col gap-2">
-            <div className="flex flex-row gap-3 items-end">
-              <p className="text-3xl font-semibold text-black/20">01</p>
-              <h1 className="text-3xl font-semibold tracking-tight">Technology Stack</h1>
-            </div>
-
-            <p className="text-xl font-semibold text-black/50 tracking-tight">
-              In diesem Projekt wurden folgende Technologien verwendet:
-            </p>
-
-          </div>
-        </div>
-
-        <div className="flex flex-col flex-1 gap-12 relative">
-          <Image
-            src="/raplarue.png"
-            width={700}
-            height={0}
-            alt="Coding Image"
-            className="rounded-lg invert border-[1.5px] border-white/10"
-          />
-
-          <Image
-            src="/coding.png"
-            width={700}
-            height={0}
-            alt="Coding Image"
-            className="rounded-lg invert border-[1.5px] border-white/10"
-          />
-        </div>
-      </div>
+      <KfcWorkPage />
     </main>
   );
 }
