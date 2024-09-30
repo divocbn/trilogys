@@ -9,7 +9,8 @@ export default function TransitionNavigation({ children, href }: React.PropsWith
   return (
     <div
       className="max-w-md hover:scale-95 transition-transform cursor-pointer"
-      onClick={() => router.push(href)}>
+      onClick={() => router.push(href)}
+    >
       {children}
     </div>
   );
