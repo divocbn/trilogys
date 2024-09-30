@@ -1,46 +1,71 @@
-# Portfolio
+# Project Structure Documentation
 
-> [!NOTE]
->
-> This project is still in develoment.
+## Overview
 
-## Quick Start
+This project appears to be a monorepo containing a web application and shared packages. It uses technologies like Next.js, React, Tailwind CSS, TypeScript, and various tooling configurations.
 
-To get it running, follow the steps below:
+## Key Components
 
-### 1. Setup dependencies
+### Apps
 
-```bash
-# Install dependencies
-pnpm i
+- `web`: The main Next.js web application
 
-# Configure environment variables
-# There is an `.env.example` in the root directory you can use for reference
-cp .env.example .env
+### Packages
 
-# Push the Prisma schema to the database
-pnpm db:push
-```
+- `db`: Database utilities and schema
+- `ui`: Shared UI components 
+- `eslint-config`: ESLint configuration
+- `prettier-config`: Prettier configuration
+- `tailwind-config`: Tailwind CSS configuration
+- `tsconfig`: TypeScript configuration
+
+### Tooling
+
+- ESLint
+- Prettier  
+- Tailwind CSS
+- TypeScript
+- GitHub Actions
+
+## Notable Files/Directories
+
+- `apps/web`: Contains the main Next.js web application code
+- `packages/db`: Database schema and utilities
+- `packages/ui`: Reusable React components
+- `tooling`: Contains various tool configurations
+- `turbo.json`: Turborepo configuration
+- `.github/workflows`: CI pipeline configuration
+
+## Key Technologies
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Prisma (for database)
+- tRPC
+- Turborepo
+
+## Setup and Development
+
+The project uses pnpm for package management. Key scripts:
+
+- `pnpm dev`: Start development server
+- `pnpm build`: Build for production
+- `pnpm lint`: Run linters
+- `pnpm format`: Format code
+
+Environment variables are managed via `.env` files.
 
 ## Deployment
 
-### Next.js
+The project is configured for deployment on Vercel, with instructions provided in the README.
 
-#### Prerequisites
+## Additional Notes
 
-> **Note**
-> Please note that the Next.js application with tRPC must be deployed in order for the Expo app to communicate with the server in a production environment.
+- The project uses a monorepo structure to share code between packages
+- Custom UI components and theming are implemented
+- There is a focus on type safety with TypeScript usage throughout
+- The codebase follows consistent formatting and linting rules
 
-#### Deploy to Vercel
-
-Let's deploy the Next.js application to [Vercel](https://vercel.com). If you've never deployed a Turborepo app there, don't worry, the steps are quite straightforward. You can also read the [official Turborepo guide](https://vercel.com/docs/concepts/monorepos/turborepo) on deploying to Vercel.
-
-1. Create a new project on Vercel, select the `apps/nextjs` folder as the root directory. Vercel's zero-config system should handle all configurations for you.
-
-2. Add your `DATABASE_URL` environment variable.
-
-3. Done! Your app should successfully deploy. Assign your domain and use that instead of `localhost` for the `url` in the Expo app so that your Expo app can communicate with your backend when you are not in development.
-
-## References
-
-The stack originates from [create-t3-app](https://github.com/t3-oss/create-t3-app).
+This structure allows for a modular, maintainable codebase with shared configurations and components across the project.
