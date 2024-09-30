@@ -24,22 +24,17 @@ import TransitionNavigation from './(landing)/_components/transition-navigation'
 export const metadata: Metadata = {
   metadataBase: new URL(
     env.VERCEL_ENV === "production"
-      ? "https://turbo.t3.gg"
+      ? "https://trilogys.de"
       : "http://localhost:3000",
   ),
   title: "Trilogys Studios",
-  description: "Simple monorepo with shared backend for web & mobile apps",
+  description: "Revolutionäres Entwicklerstudio mit Sinn für moderene Technologien.",
   openGraph: {
-    title: "Create T3 Turbo",
-    description: "Simple monorepo with shared backend for web & mobile apps",
-    url: "https://create-t3-turbo.vercel.app",
-    siteName: "Create T3 Turbo",
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@jullerino",
-    creator: "@jullerino",
-  },
+    title: "Trilogys Studios",
+    description: "Revolutionäres Entwicklerstudio mit Sinn für moderene Technologien.",
+    url: "https://trilogys.de",
+    siteName: "Trilogys Studios",
+  }
 };
 
 export const viewport: Viewport = {
