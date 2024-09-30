@@ -1,13 +1,14 @@
 import * as React from "react"
 
 import { Button } from "@portfolio/ui/button"
+import Ripple from "@portfolio/ui/magicui/ripple"
 import { TbMailExclamation } from "react-icons/tb";
-import { PiMailboxDuotone } from "react-icons/pi";
+import { PiMailboxDuotone, PiMouseScrollLight } from "react-icons/pi";
 
 export default function TeamPage() {
   return (
     <main className="flex flex-col -mt-[6.5rem]">
-      <div className="min-h-screen relative bg-black flex flex-col items-center justify-center py-36 gap-4 w-full">
+      <div className="min-h-screen relative  bg-black flex flex-col items-center justify-center py-36 gap-4 w-full">
         <p className='vt-name-[headline] text-transparent py-2 bg-[linear-gradient(108deg,#0894ff,#c959dd__34%,#ff2e54_68%,#ff9004)] bg-clip-text text-6xl tracking-tight font-semibold max-w-md text-center'>
           Das Team hinter Trilogys Studios
         </p>

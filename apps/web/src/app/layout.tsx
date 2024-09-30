@@ -83,7 +83,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
                   <p className="max-w-md cursor-pointer hover:scale-95 transition-transform">Kontakt</p>
                 </ContactUsModal>
 
-                <TransitionNavigation href="/impress">Impressum</TransitionNavigation>
+                <TransitionNavigation href="/imprint">Impressum</TransitionNavigation>
               </div>
 
               <div className="sm:flex flex-row gap-5 hidden">
