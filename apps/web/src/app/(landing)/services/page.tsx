@@ -77,7 +77,24 @@ export default function ServicesPage() {
               Trilogys Studios legt großen Wert auf strukturierten, sicheren und leistungsoptimierten Code.
             </p>
           </div>
+        </div>
+        
+        <div className="flex flex-col flex-1 gap-12 relative">
+          <Image
+            src="/images/kfc-showcase.png"
+            width={700}
+            height={0}
+            alt="Coding Image"
+            className="rounded-lg border-[1.5px] border-black/10"
+          />
 
+          <Image
+            src="/images/kfc-code.png"
+            width={700}
+            height={0}
+            alt="Coding Image"
+            className="rounded-lg invert border-[1.5px] border-white/10"
+          />
         </div>
       </div>
 

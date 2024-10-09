@@ -18,6 +18,8 @@ import { useFrame } from '@react-three/fiber';
 import { Button } from '@portfolio/ui/button';
 import RapLaRueWorkPage from './_components/raplarue-work';
 import KfcWorkPage from './_components/kfc-work';
+import Seperator from './_components/seperator';
+import KindeWorkPage from './_components/kinde-work';
 
 export default function WorkPage() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -86,6 +88,11 @@ export default function WorkPage() {
       <div className="sm:mx-32 md:mx-16 mx-8 sm:bg-black/10 h-0.5 sm:mb-20" />
 
       <KfcWorkPage />
+
+      <Seperator />
+
+      <KindeWorkPage />
+
     </main>
   );
 }

@@ -29,9 +29,9 @@ export default function TeamPage() {
           </div>
 
           <div className="py-10 bg-black/5 w-full px-10">
-            <p className="text-3xl tracking-tight font-semibold">Denizhan Göktas</p>
+            <p className="text-3xl tracking-tight font-semibold">Markus Freimann</p>
             <p className="text-xl tracking-tight font-medium text-black/70">CEO & Entwickler bei Trilogys Studios</p>
-            <p className="text-sm tracking-tight font-medium text-black/70 pt-2">d.göktas@trilogys.de</p>
+            <p className="text-sm tracking-tight font-medium text-black/70 pt-2">m.freimann@trilogys.de</p>
           </div>
 
           <div className="py-10 bg-black/5 w-full px-10">
