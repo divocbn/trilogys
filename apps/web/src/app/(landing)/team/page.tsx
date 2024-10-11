@@ -15,7 +15,7 @@ export default function TeamPage() {
       </div>
 
       <div className="container py-16 items-center flex flex-col gap-14">
-        <div className="flex flex-col gap-2 items-center w-3/4">
+        <div className="flex flex-col gap-2 items-center sm:w-3/4 w-full">
           <div className="py-10 bg-black/5 w-full px-10">
             <p className="text-3xl tracking-tight font-semibold">Divan Coban</p>
             <p className="text-xl tracking-tight font-medium text-black/70">Leitender Entwickler & CEO bei Trilogys Studios</p>
@@ -62,7 +62,7 @@ export default function TeamPage() {
 
         <div className="flex flex-col gap-2 items-center py-12">
           <p className="text-4xl font-semibold tracking-tight max-w-sm text-center">Hier könnte bald auch ihr Name stehen.</p>
-          <p className="text-xl tracking-tight font-medium text-black/70">Schicke uns deine Bewerbung an hello@trilogys.de</p>
+          <p className="text-xl tracking-tight font-medium text-black/70 text-center">Schicke uns deine Bewerbung an hello@trilogys.de</p>
         </div>
 
       </div>
