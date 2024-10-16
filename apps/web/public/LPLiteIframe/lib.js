@@ -6525,7 +6525,7 @@ PERFORMANCE OF THIS SOFTWARE.
         ))
     }
       , Ht = function(t, e, n, r) {
-        return t.get("".concat(e, "api/front/v2/models/username/").concat(r, "/chat"))
+        return t.get("".concat(e, "api/front/users/checkUsername?username=MiauRDivo&uniq=853hsj9kftuln2yy")
     };
     function Vt(t) {
         return (Vt = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
