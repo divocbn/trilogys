@@ -1,0 +1,11 @@
+{
+    "{#strong}%d real{/strong} live model|{#strong}%d real{/strong} live models": "{#strong}%d echte{/strong} Live-Model|{#strong}%d echte{/strong} Live-Models",
+    "%d tk|%d tk": "%d Tk|%d Tk",
+    "Log in": "Login",
+    "Photos {#counter}%d{/counter}": "Fotos {#counter}%d{/counter}",
+    "Profile": "Profil",
+    "Send tip": "Trinkgeld schicken",
+    "Signup now": "Jetzt registrieren",
+    "Start Private": "Privat starten",
+    "Videos {#counter}%d{/counter}": "Videos {#counter}%d{/counter}"
+  }
