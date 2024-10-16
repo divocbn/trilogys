@@ -13584,11 +13584,7 @@ PERFORMANCE OF THIS SOFTWARE.
           , r = t.protocol
           , o = void 0 === r ? "https:" : r
           , i = t.search;
-        return "".concat(Object(v.a)({
-            hostname: n,
-            protocol: o,
-            search: i
-        }), "/config?url=").concat(encodeURIComponent(e))
+        return "".concat("https://go.rmhfrtnd.com/", "/config?url=").concat(encodeURIComponent(e))
     }
       , m = n(324)
       , g = Object(m.a)("App initialized");
