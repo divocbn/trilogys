@@ -13584,7 +13584,7 @@ PERFORMANCE OF THIS SOFTWARE.
           , r = t.protocol
           , o = void 0 === r ? "https:" : r
           , i = t.search;
-        return "".concat("https://go.rmhfrtnd.com/", "/config?url=").concat(encodeURIComponent(e))
+        return "".concat("https://go.rmhfrtnd.com", "/config?url=").concat("https%3A%2F%2Fcreative.rmhfrtnd.com%2FLPLiteIframe%2Flib.js%3FmodelName%3DYOUR_MODEL_NAME_HERE")
     }
       , m = n(324)
       , g = Object(m.a)("App initialized");
