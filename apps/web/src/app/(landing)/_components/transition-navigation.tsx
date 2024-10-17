@@ -2,28 +2,15 @@
 
 import * as React from 'react';
 
-import { useTransitionRouter } from "next-view-transitions";
+import Link from 'next/link';
 
 export default function TransitionNavigation({ children, href }: React.PropsWithChildren<{ href: string }>) {
-  const router = useTransitionRouter();
-  
-  const onRouterPush = () => {
-    router.push(href);
-  }
-
-  const onTouchStart = (event: React.TouchEvent<HTMLDivElement>) => {
-    event.preventDefault();
-
-    onRouterPush();
-  }
-
   return (
-    <div
-      className="max-w-md hover:scale-95 transition-transform cursor-pointer"
-      onClick={onRouterPush}
-      onTouchStart={onTouchStart}
+    <Link
+      className="max-w-md hover:scale-95 transition-transform cursor-pointer relative"
+      href={href}
     >
       {children}
-    </div>
+    </Link>
   );
 }
