@@ -1,6 +1,9 @@
+"use client"
+
 import { Button } from "@portfolio/ui/button";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 import { PiFramerLogoFill } from 'react-icons/pi';
 
@@ -8,6 +11,8 @@ import { RiDrizzleFill, RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri';
 import { TbBrandAmazon, TbBrandVercel, TbMusicX } from 'react-icons/tb';
 
 export default function RapLaRueWorkPage() {
+  const router = useRouter();
+
   return (
     <div className="min-h-screen container py-32 gap-5 flex sm:flex-row flex-col">
       <div className="flex flex-col gap-12 xl:max-w-lg lg:max-w-md md:max-w-sm">
@@ -87,9 +92,9 @@ export default function RapLaRueWorkPage() {
           </div>
 
           <p className="text-xl font-semibold text-black/50 tracking-tight mt-2">
-            <Button>
+            <Button onClick={() => router.push("https://rap-la-rue.de")}>
               Besuchen Sie Rap La Rue
-              </Button>
+            </Button>
           </p>
         </div>
       </div>

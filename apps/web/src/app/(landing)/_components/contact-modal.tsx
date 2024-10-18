@@ -50,6 +50,7 @@ export function ContactUsModal({ children }: React.PropsWithChildren) {
 
           <p className="text-black/50 text-sm tracking-tight max-w-sm mt-2">Du willst direkt loslegen? Vereinbare jetzt einen Web-Call und bringe den Ball ins Rollen.          </p>
         </div>
+        
         <DialogFooter>
           <Button
             type="submit"
