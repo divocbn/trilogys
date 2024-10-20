@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 
-import Link from 'next/link';
+import { Link } from 'next-view-transitions';
 
 export default function TransitionNavigation({ children, href }: React.PropsWithChildren<{ href: string }>) {
   return (
