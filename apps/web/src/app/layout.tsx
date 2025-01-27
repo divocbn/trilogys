@@ -72,7 +72,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
                 <TransitionNavigation href="/">Informationen</TransitionNavigation>
                 <TransitionNavigation href="/services">Dienstleistungen</TransitionNavigation>
                 <TransitionNavigation href="/work">Referenzen</TransitionNavigation>
-                <TransitionNavigation href="/team">Team</TransitionNavigation>
+                {/* <TransitionNavigation href="/team">Team</TransitionNavigation> */}
 
                 <ContactUsModal>
                   <p className="max-w-md cursor-pointer hover:scale-95 transition-transform">Kontakt</p>

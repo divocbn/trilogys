@@ -16,11 +16,11 @@ export default function TeamPage() {
 
       <div className="container py-16 items-center flex flex-col gap-14">
         <div className="flex flex-col gap-2 items-center sm:w-3/4 w-full">
-          <div className="py-10 bg-black/5 w-full px-10">
+          {/* <div className="py-10 bg-black/5 w-full px-10">
             <p className="text-3xl tracking-tight font-semibold">Divan Coban</p>
             <p className="text-xl tracking-tight font-medium text-black/70">Leitender Entwickler & CEO bei Trilogys Studios</p>
             <p className="text-sm tracking-tight font-medium text-black/70 pt-2">d.coban@trilogys.de</p>
-          </div>
+          </div> */}
 
           <div className="py-10 bg-black/5 w-full px-10">
             <p className="text-3xl tracking-tight font-semibold">Youssef Hammoud</p>
@@ -34,11 +34,11 @@ export default function TeamPage() {
             <p className="text-sm tracking-tight font-medium text-black/70 pt-2">m.freimann@trilogys.de</p>
           </div>
 
-          <div className="py-10 bg-black/5 w-full px-10">
+          {/* <div className="py-10 bg-black/5 w-full px-10">
             <p className="text-3xl tracking-tight font-semibold">Erdal Göktas</p>
             <p className="text-xl tracking-tight font-medium text-black/70">Entwickler & Cyber-Security Spezialist bei Trilogys Studios</p>
             <p className="text-sm tracking-tight font-medium text-black/70 pt-2">e.göktas@trilogys.de</p>
-          </div>
+          </div> */}
 
           <div className="py-10 bg-black/5 w-full px-10">
             <p className="text-3xl tracking-tight font-semibold">Jamie Jeremy Klipp</p>
@@ -46,7 +46,7 @@ export default function TeamPage() {
             <p className="text-sm tracking-tight font-medium text-black/70 pt-2">j.klipp@trilogys.de</p>
           </div>
 
-
+{/* 
           <div className="py-10 bg-black/5 w-full px-10">
             <p className="text-3xl tracking-tight font-semibold">Dominik Forschner</p>
             <p className="text-xl tracking-tight font-medium text-black/70">Entwickler bei Trilogys Studios</p>
@@ -57,7 +57,7 @@ export default function TeamPage() {
             <p className="text-3xl tracking-tight font-semibold">Marvin Terwege</p>
             <p className="text-xl tracking-tight font-medium text-black/70">Junior-Entwickler bei Trilogys Studios</p>
             <p className="text-sm tracking-tight font-medium text-black/70 pt-2">m.terwege@trilogys.de</p>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex flex-col gap-2 items-center py-12">
